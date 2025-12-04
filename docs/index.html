@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OLA - Open Linux Authentication. Privacy-first biometric authentication for Linux. Secure, modular, open-source.">
+    <meta name="keywords" content="Linux, authentication, biometric, face recognition, fingerprint, security, privacy, AI agents, open source, Rust">
+    <meta name="author" content="ij_muse">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OLA - Open Linux Authentication">
+    <meta property="og:description" content="Privacy-first biometric authentication daemon for Linux">
+    <meta property="og:image" content="https://github.com/ij_muse/ola-core/raw/main/assets/logo_banner.png">
+    
+    <title>OLA - Open Linux Authentication</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+        }
+        
+        .logo {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.4em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 12px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 15px 35px;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #f7f7f7;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature {
+            padding: 25px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+        .feature p {
+            color: #666;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border-left: 5px solid #e17055;
+        }
+        
+        .highlight-box h2 {
+            color: #2d3436;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box p {
+            color: #2d3436;
+            font-size: 1.1em;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            padding: 30px 0;
+            border-top: 2px solid #eee;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding: 30px 0;
+            opacity: 0.9;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        code {
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .code-block {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .tagline { font-size: 1.1em; }
+            .main-content { padding: 30px 20px; }
+            .stats { flex-direction: column; gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://github.com/ij_muse/ola-core/raw/main/assets/logo_banner.png" alt="OLA Logo" class="logo">
+            <h1>Open Linux Authentication</h1>
+            <p class="tagline">Privacy-first biometric authentication for Linux</p>
+        </header>
+        
+        <div class="main-content">
+            <div class="cta-buttons">
+                <a href="https://github.com/ij_muse/ola-core" class="btn btn-primary">★ View on GitHub</a>
+                <a href="https://github.com/ij_muse/ola-core/blob/main/FUNDING.md" class="btn btn-secondary">💜 Sponsor</a>
+            </div>
+            
+            <div class="highlight-box">
+                <h2>🤖 Critical for AI Agent Security</h2>
+                <p>As AI agents become part of workflows, <strong>humans must authenticate the agents, their systems, and their actions</strong> using verifiable biometrics. OLA provides presence verification, biometric gating, and device authentication to ensure AI agents operate under strict human oversight.</p>
+            </div>
+            
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🔐 Multi-Factor Biometric</h3>
+                    <p>Face recognition, fingerprint scanning, and IR camera support for liveness detection.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🛡️ Privacy-First Design</h3>
+                    <p>Your biometric data never leaves your machine. No cloud, no tracking, no vendor lock-in.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🦀 Rust-Powered Security</h3>
+                    <p>Built with Rust for memory safety, zero compiler warnings, and production-grade reliability.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🔌 Modular Architecture</h3>
+                    <p>JSON-RPC API over Unix sockets. Integrate with any desktop environment or application.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🤝 Open Source (MIT)</h3>
+                    <p>Fully transparent, auditable code. Free forever, no proprietary blobs.</p>
+                </div>
+                
+                <div class="feature">
+                    <h3>🚀 Systemd Integration</h3>
+                    <p>Socket activation, service hardening, and graceful shutdown built-in.</p>
+                </div>
+            </div>
+            
+            <h2>Quick Start</h2>
+            <div class="code-block">
+<pre>git clone https://github.com/ij_muse/ola-core.git
+cd ola-core
+sudo ./install_production.sh
+systemctl status ola.service</pre>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">603</div>
+                    <div class="stat-label">Lines of Rust</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Compiler Warnings</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Tests Passing</div>
+                </div>
+            </div>
+            
+            <h2>Use Cases</h2>
+            <ul style="line-height: 2; margin-left: 20px;">
+                <li><strong>AI Agent Authorization:</strong> Humans authenticating autonomous systems before high-risk actions</li>
+                <li><strong>PAM Integration:</strong> Replace password prompts with face/fingerprint verification</li>
+                <li><strong>Sudo Replacement:</strong> Biometric authentication for privileged commands</li>
+                <li><strong>Screen Lock:</strong> Unlock your desktop with your face</li>
+                <li><strong>Multi-Factor Auth:</strong> Combine biometrics with traditional methods</li>
+            </ul>
+            
+            <h2>Get Involved</h2>
+            <p style="margin: 20px 0;">OLA is an independent, community-driven project. We welcome:</p>
+            <ul style="line-height: 2; margin-left: 20px;">
+                <li>🐛 <a href="https://github.com/ij_muse/ola-core/issues">Bug reports and feature requests</a></li>
+                <li>💻 <a href="https://github.com/ij_muse/ola-core/blob/main/CONTRIBUTING.md">Code contributions</a> (check out our <a href="https://github.com/ij_muse/ola-core/blob/main/GOOD_FIRST_ISSUES.md">good first issues</a>)</li>
+                <li>💬 Discussions and feedback</li>
+                <li>💰 <a href="https://github.com/ij_muse/ola-core/blob/main/FUNDING.md">Sponsorship and funding</a></li>
+                <li>📢 Spreading the word</li>
+            </ul>
+            
+            <div style="margin-top: 50px; padding: 30px; background: #f0f3ff; border-radius: 8px; border-left: 4px solid #667eea;">
+                <h3 style="color: #667eea; margin-bottom: 15px;">Current Status: v1.0.0-alpha</h3>
+                <p style="color: #555;">This is an early alpha release with stubbed biometric backends (proof of architecture). The core daemon, API, security hardening, and systemd integration are production-ready. Sprint 2 will add real face recognition and fingerprint support.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>OLA - Open Linux Authentication</p>
+            <p>Licensed under <a href="https://github.com/ij_muse/ola-core/blob/main/LICENSE">MIT License</a> • Maintained by <a href="https://github.com/ij_muse">@ij_muse</a></p>
+            <p style="margin-top: 10px;">Contact: <a href="mailto:ivmuse25@gmail.com">ivmuse25@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,7 +1,6 @@
 # Rust build artifacts
-/target
-**/*.rs.bk
-Cargo.lock
+target/
+
 
 # Editor/IDE
 .vscode/
@@ -23,6 +22,22 @@ Thumbs.db
 # Logs
 *.log
 /tmp/*.log
+
+# Review/Verification documents (local only)
+COMPLETE_PUBLICATION_REVIEW.md
+FILES_TO_PUBLISH.md
+GITHUB_PUBLICATION_GUIDE.md
+PUBLICATION_STRATEGY.md
+VERIFICATION_REPORT.md
+FINAL_PREFLIGHT.sh
+SELF_VERIFY.sh
+verify_all.sh
+preflight_report.txt
+PRE_FLIGHT_CHECK.sh
+
+# Python cache
+__pycache__/
+*.pyc
 
 # Test artifacts
 /tmp/ola-core.pid
