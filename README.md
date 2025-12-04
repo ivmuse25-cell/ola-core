@@ -60,6 +60,29 @@ This architecture allows developers to create beautiful, rich user interfaces wi
 - **PAM Integration**: Native login screen support (`pam_ola.so`).
 - **Network Mode**: Optional remote authentication for cluster management.
 
+## Use Cases
+
+### Human-Verified AI Agent Authorization
+
+As AI agents become part of workflows, **strict human oversight is critical**. OLA provides:
+
+- **Presence verification** before agents execute high-risk commands
+- **Biometric gating** for autonomous system authorization
+- **Device authentication** to ensure agents run on trusted hardware
+- **Multi-factor requirements** for agent-to-agent interactions
+
+AI agents are powerful but not yet mature. **Humans must authenticate the agents, their systems, and their actions** using verifiable biometrics. OLA makes this possible.
+
+### Traditional Authentication
+
+- Face unlock for login screens (via PAM)
+- Sudo replacement with biometric verification
+- Screen lock/unlock
+- Application-level authorization
+- Multi-factor authentication
+
+
+
 ## Architecture
 
 The goal is to isolate all authentication logic in the core, letting developers create rich apps on top.
