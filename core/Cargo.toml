@@ -15,7 +15,7 @@ env_logger = "0.10"
 nix = { version = "0.27", features = ["user", "socket", "fs"] }
 libc = "0.2"
 glob = "0.3"
-base64 = "0.21"
+base64 = "0.22"
 sodiumoxide = "0.2.7"
 users = "0.11"
 listenfd = "1.0"
