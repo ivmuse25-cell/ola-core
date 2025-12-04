@@ -61,8 +61,8 @@ The fingerprint patterns within the iris symbolize:
 
 ## Attribution
 
-Logo designed for OLA project.
+Logo designed for the OLA project.  
 License: Same as project (MIT License).
 
-Created by: Antigravity AI for @ij_muse
-Date: December 2025
+Date: December 2024
+
