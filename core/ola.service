@@ -1,0 +1,24 @@
+[Unit]
+Description=Ola core service
+After=network.target
+
+[Service]
+Type=simple
+User=ola
+Group=ola
+ExecStart=/usr/local/bin/ola-core
+Restart=on-failure
+RuntimeDirectory=ola
+PermissionsStartOnly=yes
+Environment=RUST_LOG=info
+
+# Hardening
+ProtectSystem=full
+PrivateTmp=yes
+NoNewPrivileges=yes
+ProtectHome=read-only
+LimitNOFILE=65536
+# CapabilityBoundingSet removed: service runs as 'ola' user, avoid granting CAP_SYS_ADMIN.
+
+[Install]
+WantedBy=multi-user.target
