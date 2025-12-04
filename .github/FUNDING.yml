@@ -1,0 +1,20 @@
+# GitHub Sponsors Configuration
+# This file enables the "Sponsor" button on your repository
+
+# GitHub Sponsors username (uncomment when you set it up)
+# github: ij_muse
+
+# Other sponsor platforms (uncomment and customize as needed)
+# patreon: your_username
+# open_collective: ola
+# ko_fi: ijmuse
+# tidelift: npm/package-name
+# community_bridge: project-name
+# liberapay: username
+# issuehunt: username
+# otechie: username
+# lfx_crowdfunding: project-name
+
+# Custom sponsor URLs (you can add multiple)
+custom: 
+  - https://github.com/ij_muse/ola-core/blob/main/FUNDING.md
