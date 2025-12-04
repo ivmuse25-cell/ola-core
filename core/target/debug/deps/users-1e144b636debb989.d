@@ -1,0 +1,12 @@
+/home/jay/.gemini/antigravity/scratch/ola/core/target/debug/deps/users-1e144b636debb989.d: /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/lib.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/base.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/cache.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/mock.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/switch.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/traits.rs
+
+/home/jay/.gemini/antigravity/scratch/ola/core/target/debug/deps/libusers-1e144b636debb989.rlib: /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/lib.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/base.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/cache.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/mock.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/switch.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/traits.rs
+
+/home/jay/.gemini/antigravity/scratch/ola/core/target/debug/deps/libusers-1e144b636debb989.rmeta: /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/lib.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/base.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/cache.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/mock.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/switch.rs /home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/traits.rs
+
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/lib.rs:
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/base.rs:
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/cache.rs:
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/mock.rs:
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/switch.rs:
+/home/jay/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/users-0.11.0/src/traits.rs:

@@ -1,0 +1,1 @@
+/home/jay/.gemini/antigravity/scratch/ola/core/target/release/ola-core: /home/jay/.gemini/antigravity/scratch/ola/core/src/camera.rs /home/jay/.gemini/antigravity/scratch/ola/core/src/camera_worker.rs /home/jay/.gemini/antigravity/scratch/ola/core/src/main.rs /home/jay/.gemini/antigravity/scratch/ola/core/src/secure_store.rs

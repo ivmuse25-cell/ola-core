@@ -1,0 +1,28 @@
+# Rust build artifacts
+/target
+**/*.rs.bk
+Cargo.lock
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keys and runtime sockets
+/etc/ola/secret.key
+/tmp/ola.sock
+/run/ola/*.sock
+*.key
+
+# Logs
+*.log
+/tmp/*.log
+
+# Test artifacts
+/tmp/ola-core.pid

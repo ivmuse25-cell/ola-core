@@ -1,0 +1,12 @@
+prefix=/home/jay/.gemini/antigravity/scratch/ola/core/target/debug/build/libsodium-sys-77e42bd1dec8734a/out/installed
+exec_prefix=${prefix}
+libdir=/home/jay/.gemini/antigravity/scratch/ola/core/target/debug/build/libsodium-sys-77e42bd1dec8734a/out/installed/lib
+includedir=${prefix}/include
+
+Name: libsodium
+Version: 1.0.18
+Description: A modern and easy-to-use crypto library
+
+Libs: -L${libdir} -lsodium
+Libs.private:  -pthread 
+Cflags: -I${includedir}

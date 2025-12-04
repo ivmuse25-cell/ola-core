@@ -1,0 +1,21 @@
+[package]
+name = "ola-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.29", features = ["full"] }
+tokio-util = { version = "0.7", features = ["codec"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+log = "0.4"
+env_logger = "0.10"
+nix = { version = "0.27", features = ["user", "socket", "fs"] }
+libc = "0.2"
+glob = "0.3"
+base64 = "0.21"
+sodiumoxide = "0.2.7"
+users = "0.11"
+listenfd = "1.0"
